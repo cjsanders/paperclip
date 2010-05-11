@@ -98,7 +98,7 @@ module Paperclip
     def paperclip_fixture(model, attachment, extension)
       stub_paperclip_s3(model, attachment, extension)
       base_path = File.join(File.dirname(__FILE__), "..", "..",
-                            "features", "support", "paperclip")
+                "..", "..", "features", "support", "paperclip")
       File.new(File.join(base_path, model, "#{attachment}.#{extension}"))
     end
   end
